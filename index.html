@@ -1,11 +1,151 @@
+<!--
+  Personal Portfolio Website for Cooper Buch
+  Simple, beginner-friendly HTML structure with comments for learning
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooper Buch's Space</title>
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <!-- Centered image/logo -->
+      <img src="https://avatars.githubusercontent.com/u/69183297?v=4" alt="Cooper's Logo" class="hero-img">
+      <!-- Big welcoming message -->
+      <h1>Welcome to Cooper Buch’s Space</h1>
+      <!-- Subtext inviting visitors to scroll -->
+      <p class="hero-subtext">Hi there! Scroll down to learn more about me and my projects. 🐦</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <p>
+        Hey! I’m Cooper from Austin, TX. I’m a computer science major who loves building creative, user-friendly websites. Birds are my favorite, and I’m passionate about full stack web development. I believe coding should be fun, expressive, and a little bit playful!
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-row">
+        <!-- Each skill is in a box with an icon and label -->
+        <div class="skill-box">
+          <i class="fab fa-html5 skill-icon" aria-hidden="true"></i>
+          <span>HTML</span>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-css3-alt skill-icon" aria-hidden="true"></i>
+          <span>CSS</span>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-js-square skill-icon" aria-hidden="true"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-bootstrap skill-icon" aria-hidden="true"></i>
+          <span>Bootstrap</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects-row">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>Birdwatcher App</h3>
+          <p>A simple app to log and share bird sightings. Built for fun and learning!</p>
+          <div class="project-buttons">
+            <a href="#" class="btn">GitHub</a>
+            <a href="#" class="btn">Demo</a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>Personal Blog</h3>
+          <p>My space to write about coding, creativity, and cool tech discoveries.</p>
+          <div class="project-buttons">
+            <a href="#" class="btn">GitHub</a>
+            <a href="#" class="btn">Demo</a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>This very site! Designed to show my journey as a web developer.</p>
+          <div class="project-buttons">
+            <a href="#" class="btn">GitHub</a>
+            <a href="#" class="btn">Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Favorites Section (Fun) -->
+    <section id="favorites" class="favorites-section">
+      <h2>Favorites</h2>
+      <div class="favorites-row">
+        <!-- Favorite Food: Pizza -->
+        <div class="favorite-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/1404/1404945.png" alt="Favorite Food: Pizza" class="favorite-img">
+          <span>Pizza</span>
+        </div>
+        <!-- Favorite Animal: Birds -->
+        <div class="favorite-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/3069/3069186.png" alt="Favorite Animal: Birds" class="favorite-img">
+          <span>Birds</span>
+        </div>
+        <!-- Favorite Hobby: Traveling -->
+        <div class="favorite-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/7893/7893979.png" alt="Favorite Hobby: Traveling" class="favorite-img">
+          <span>Traveling</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <p>Don’t be shy, reach out!</p>
+      <div class="contact-icons">
+        <a href="#" class="contact-link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" class="contact-link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Cooper Buch</p>
+  </footer>
 </body>
 </html>
